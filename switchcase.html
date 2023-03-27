@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Switch Case</title>
+
+        <style>
+            body{background-color:#0ef;
+            }
+        </style>
+
+        <script>
+            function pg()
+            {
+            document.getElementById("perc").value = (document.getElementById("om").value / document.getElementById("mm").value)*100
+
+            var Percentage=document.getElementById("perc").value;
+            var g;
+
+            switch (Math.floor(Percentage/10))
+            {
+                case 9:
+                    g="Excellent";
+                    break;
+                case 8:  
+                    g="Very Good";
+                    break;
+                case 7:
+                    g="Good";
+                    break;
+                case 6:
+                    g="Average";
+                    break;
+                case 5:
+                    g="Below Average";
+                    break;
+                case 4:
+                    g="Pass";
+                    break;
+                default: 
+                    g="Fail";
+                    break;
+
+            }
+            document.getElementById("grade").value =g;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        
+        <h1>Percentage And Grade Calculator:</h1>
+
+        Max Marks : <input type="text" id="mm">  <br> <br>
+       Obtained Marks : <input type="text" id="om">  <br> <br>
+
+        <button type="button" onclick="pg()">SUBMIT</button>  <br>  <br>
+
+        Percentage : <input type="text" id="perc"> <br> <br>
+        Grade : <input type="text" id="grade">
+
+
+    </body>
+</html>
