@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Object</title>
+    </head>
+
+    <body>
+        <h1>Number Object</h1>
+
+        <script>
+            var x=15;
+            var n=5.3456789;
+            var y=new Number(15);
+            var z=new Number(15);
+            var s=x.toString()
+            var e=x.toExponential(2)
+            var f=x.toFixed(3)
+            var f=n.toFixed(3)
+            var p=n.toPrecision(3)
+            // document.writeln("Type Of X:"+typeof x+"<br>")
+            // document.writeln("Type Of Y:"+typeof y+"<br>")
+            // document.writeln("Type Of Z:"+typeof z+"<br>")
+            document.writeln("Type Of S:"+typeof s+"<br>")
+            // document.writeln("X==Y:"+(x==y)+"<br>")
+            // document.writeln("X===Y:"+(x===y)+"<br>")
+            // document.writeln("Y===Y:"+(y===y)+"<br>")
+            // document.writeln("Y==Z:"+(y==z)+"<br>")
+            // document.writeln("Y===Z:"+(y===z)+"<br>")
+            document.writeln("Exponential Form:"+e+"<br>")
+            document.writeln("Fixed Function:"+f+"<br>")
+            document.writeln("Precision Function:"+p+"<br>")
+            document.writeln("Type Of P:"+typeof p+"<br>")
+            document.writeln("Type Of F:"+typeof f+"<br>")
+
+            var a=Number(e)
+            var b=parseInt(f)
+            var c=parseFloat(f)
+            document.writeln("Type Of A:"+typeof a+"<br>")
+            document.writeln("Type Of B:"+typeof b+"<br>"+"Value Of B "+b+"<br>")
+            document.writeln("Type Of C:"+typeof c+"<br>"+"Value Of C "+c+"<br>")
+
+            document.writeln("<h1>Number Properties</h1>")
+            document.writeln("MIN_VALUE:"+Number.MIN_VALUE+"<br>")
+            document.writeln("MAX_VALUE:"+Number.MAX_VALUE+"<br>")
+            document.writeln("POSITIVE INFINITY:"+Number.POSITIVE_INFINITY+"<br>")
+            document.writeln("NEGATIVE INFINITY:"+Number.NEGATIVE_INFINITY+"<br>")
+            document.writeln("NOT A NUMBER:"+Number.NaN+"<br>")
+
+
+
+
+        </script>
+    </body>
+</html>
