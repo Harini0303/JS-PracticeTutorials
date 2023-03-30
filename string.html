@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STRINGS-JS</title>
+
+    </head>
+
+    <body>
+
+        <h1>Strings - String Object - Sting Methods</h1>
+
+        <script>
+            //Strings
+            var s1="Welcome To Strings In Java Script"
+            document.writeln("Double Quote String:" +s1,"<br>");
+
+            var s2='String with single quote'
+            document.writeln("Single Quote String:" +s2,"<br>");
+
+            var s3='String with single quote which inclueds"Double Quotes"'
+            document.writeln("Single Quote String:" +s3,"<br>");
+
+            var s4="String with Double quote which inclueds 'single Quotes'"
+            document.writeln("Double Quote String:" +s4,"<br>");
+
+            document.writeln("Type Of S2:" +typeof s2,"<br>");
+
+            //String Object
+
+            var s5=new String("This is string object");
+            document.writeln("String Object:",s5,"<br>");
+            document.writeln("Type Of S5:" +typeof s5,"<br>");
+
+
+        //String Methods
+            document.writeln("<h1>String Methods</h1>");
+
+            document.writeln("s1=",s1,"<br>");
+            document.writeln("s3=",s3,"<br>");
+            document.writeln("s5=",s5,"<br>");
+
+            document.writeln("indexOf():",s1.indexOf("o"),"<br>");  //first occurence
+            document.writeln("indexOf():",s1.indexOf("z"),"<br>");  //not in a string
+
+            document.writeln("lastIndexOf():",s1.lastIndexOf("o"),"<br>");  //last occurrence
+            document.writeln("lastIndexOf():",s1.lastIndexOf("z"),"<br>");  //not in a string
+
+            document.writeln("indexOf():",s1.indexOf("o",6),"<br>");  //second argument
+
+            //search()
+            document.writeln("search():",s1.search("o"),"<br>");  //index of first occurrence,not give the second argument
+
+            //slice()
+            document.writeln("slice():",s1.slice(0,7),"<br>"); //start index included and stop index excluded
+            document.writeln("slice():",s1.slice(3),"<br>");  //stop index is not given
+
+            document.writeln("slice() with negative:",s1.slice(-1),"<br>");
+            document.writeln("slice() with negative:",s1.slice(-10),"<br>");
+            document.writeln("slice() with negative:",s1.slice(-17.-5),"<br>");
+
+            //substring
+            document.writeln("substring():",s1.substring(10),"<br>"); //sme as slice diferen when compare to slice is negative value is not support
+            document.writeln("substring():",s1.substring(5,10),"<br>");
+            document.writeln("substring():",s1.substring(-10),"<br>"); //if we give return the string
+
+            //substr
+            document.writeln("substr():",s1.substr(5,10),"<br>"); //second argument is length of charcter to extract
+            document.writeln("substr():",s1.substr(-5,10),"<br>");   //also supports negative index
+
+            //replace
+            document.writeln("replace():",s1.replace("Java Script","JS"),"<br>");
+
+            //cases
+            var s6="full stack development"
+            var s7=s6.toUpperCase()
+            document.writeln(s7,"<br>")
+
+            var s7=s6.toLowerCase()
+            document.writeln(s6,"<br>")
+
+            //concate
+            var s8="Hello"
+            document.writeln(s8.concat(s6),"<br>");
+
+            //trim
+            var s9="   JAVA SCRIPT   "
+            document.writeln("Length Of s9:",s9.length,"<br>");
+            document.writeln(s9.trim(),"<br>");
+            document.writeln("Length Of s9:",s9.length,"<br>");
+
+            //charAT
+            document.writeln("charAT():",s1.charAt(5),"<br>");
+            document.writeln(s1.length,"<br>")
+
+            //charcodeAT
+            document.writeln("charCodeAT():",s1.charCodeAt(8),"<br>");
+
+
+        </script>
+
+    </body>
+</html>
