@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARRAYS</title>
+    </head>
+
+    <body>
+        <h1>Arrays</h1>
+
+        <script>
+            var a=[10,20,30,40]
+            document.writeln(a+"<br>")
+            document.writeln(typeof a+"<br>")
+
+            var b=new Array(50,60,70,80)
+            document.writeln(b+"<br>")
+
+            var c=[100]
+            document.writeln(c+"<br>")
+
+                document.writeln("<br>")
+
+            // here 100 elements with an undefined values
+            var d=new Array(100)    
+            document.writeln(d+"<br>")
+            document.writeln("Length Of the array is:"+a.length+"<br>")
+
+                document.writeln("<br>")
+
+            // to acces the element-by using the index value
+            document.writeln("First Element "+a[0]+"<br>")
+            document.writeln("Second Element ",a[1]+"<br>")
+
+                document.writeln("<br>")
+
+            // above these are number indexed
+            document.writeln(a+"<br>")
+
+                document.writeln("<br>")
+
+
+            //named indexed
+            var e={"name":"Harini","regno":711321105055,"perc":89.5}
+            document.writeln(e+"<br>")
+
+                document.writeln("<br>")
+
+            //to acces the elements
+            document.writeln(e.name+"<br>")
+            document.writeln(e.regno+"<br>")
+            document.writeln(e.perc+"<br>")
+
+                document.writeln("<br>")
+
+            //to write the code in single line
+            document.writeln(e.name+"<br>"+e.regno+"<br>"+e.perc+"<br>")
+
+                document.writeln("<br>")
+
+            //looping
+            for(i=0;i<a.length;i++)
+            {
+                //document.writeln(a[i]+"<br>")
+                document.writeln("a["+i+"]="+a[i]+"<br>")
+
+            }
+
+                document.writeln("<br>")
+
+            //reassiging
+            a[0]=100
+            document.writeln("a="+a+"<br>")
+            delete a[1]
+            document.writeln("Length of the array A is: "+a.length+"<br>")
+            document.writeln(a+"<br>")
+            for(i=0;i<a.length;i++)
+            {
+                //document.writeln(a[i]+"<br>")
+                document.writeln("a["+i+"]="+a[i]+"<br>")
+            }
+
+                document.writeln("<br>")
+
+            a[6]=200
+            document.writeln(a+"<br>")
+            for(i=0;i<a.length;i++)
+            {
+                //document.writeln(a[i]+"<br>")
+                document.writeln("a["+i+"]="+a[i]+"<br>")
+            }
+
+            //to know the variable is array or not
+            document.writeln(typeof a+"<br>")
+            var n=10
+            document.writeln(Array.isArray(a)+"<br>")
+            document.writeln(Array.isArray(n)+"<br>")
+        </script>
+
+    </body>
+</html>
