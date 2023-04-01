@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Methods</title>
+        
+    </head>
+
+    <body>
+        <h1>Array Methods</h1>
+
+        <script>
+
+            //join
+            var a=[10,20,30,40]
+            var b=[50,60,70,80]
+
+            document.writeln(a.join(" ")+"<br>")
+            document.writeln(a.join(" Harini ")+"<br>")
+
+            //sort
+            var c=["Harini","Aaakash","Dhanushiya","Subashini"]
+            document.writeln(c.sort()+"<br>")
+            //reverse
+            document.writeln(a.reverse()+"<br>")
+            document.writeln("a="+a+"<br>")
+            document.writeln("b="+b+"<br>")
+
+            //pop
+            document.writeln(a.pop()+"<br>")
+            document.writeln("a="+a+"<br>")
+
+            //push
+            document.writeln(a.push("10")+"<br>")
+            document.writeln("a="+a+"<br>")
+
+            //shift
+            document.writeln(a.shift()+"<br>")
+            document.writeln("a="+a+"<br>")
+
+            //unshift
+            document.writeln(a.unshift("50")+"<br>")
+            document.writeln("a="+a+"<br>")
+
+            //concat
+            document.writeln(a.concat(b)+"<br>")
+            //there is no upadation
+            document.writeln("a="+a+"<br>")
+           
+            document.writeln(a.concat("100")+"<br>")
+            //there is no upadation
+            document.writeln("a="+a+"<br>")
+
+            //splice
+            document.writeln(a.splice(1,0,"40")+"<br>")
+            document.writeln("a="+a+"<br>")
+
+            document.writeln(a.splice(1,0,"40","60")+"<br>")
+            document.writeln("a="+a+"<br>")
+
+            document.writeln(a.splice(3,1,"70")+"<br>")
+
+            document.writeln(a.splice(3,2)+"<br>")
+
+            //slice-extrating the position or elements
+            var n=[100,200,300,400,500,600,700]
+            document.writeln("n= "+n+"<br>")
+            document.writeln(n.slice(0,4)+"<br>")
+            document.writeln(n.slice(3)+"<br>")
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
