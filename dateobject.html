@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Date Object</title>
+    </head>
+
+    <body>
+        <h1>Date Object</h1>
+
+        <script>
+            document.writeln("<h2>")
+            var d1=new Date()
+            document.writeln(d1+"<br>")
+
+            var d2=new Date(2023,0,22,15,22,50,100)
+            document.writeln(d2+"<br>")
+
+            var d3=new Date(2021,0,3,15,24)
+            document.writeln(d3+"<br>")
+
+            var d4=new Date(2021,0,22,15)
+            document.writeln(d4+"<br>")
+
+            var d5=new Date(2021,0,22)
+            document.writeln(d5+"<br>")
+
+            var d6=new Date(2021,0)
+            document.writeln(d6+"<br>")
+
+            var d7=new Date(2021)
+            document.writeln(d7+"<br>")
+
+            //by default in JS it is like   1 JAN 1970  05:30:00
+            var d8=new Date(3000)
+            document.writeln(d8+"<br>")
+
+            var d9=new Date(1000000000000)
+            document.writeln(d9+"<br>")
+
+            var d10=new Date(-1000000000000)
+            document.writeln(d10+"<br>")
+
+            var d11=new Date(99,02)
+            document.writeln(d11+"<br>")
+
+            var d13=new Date("2023 March  28,19:12")
+                document.writeln(d13+"<br>")
+
+
+            //my date of birth
+            document.writeln("My Date Of Birthday:"+"<br>")
+                var d12=new Date(2004,2,3,9,45)
+                document.writeln(d12+"<br>")
+
+        </script>
+    </body>
+</html>
