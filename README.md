@@ -1,4 +1,4 @@
-# JS-PracticeTutorials
+# JavaScript-PracticeTutorials
 
 <p> 
 <h3>Introduction to JavaScript</h3>
