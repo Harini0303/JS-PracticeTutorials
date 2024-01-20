@@ -2,7 +2,7 @@
 
 <p> 
 <h3>Introduction to JavaScript</h3>
-<p>In This Tutorial I have Covered The Topics </p>
+<p>In This Tutorial I have Covered The Topics .</p>
 • Where to write script Tags <br>
 • Displaying Output <br>
 • Identifiers <br>
